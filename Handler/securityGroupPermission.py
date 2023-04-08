@@ -2,6 +2,8 @@ class SecurityGroupPermission:
     def __init__(self, SecurityGroupId,ec2Resource):
         self.securityGroup=ec2Resource.SecurityGroup(SecurityGroupId)
 
+        
+       
     def getSecurityGroupIp(self):
         ipSet = set()
         for permission in self.securityGroup.ip_permissions:
