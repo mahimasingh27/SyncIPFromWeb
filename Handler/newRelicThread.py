@@ -1,7 +1,7 @@
 import threading
 import sys
 import boto3,json
-import securityGroupPermission, newRelic, pingdom
+import securityGroupPermission, newRelic, pingdom, pingdomThread
 
 class NewRelicThread(threading.Thread):
    
