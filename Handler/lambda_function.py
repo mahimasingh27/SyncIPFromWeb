@@ -1,12 +1,12 @@
 import boto3,json
-import securityGroupPermission, newRelic, pingdom,threadClass
+import securityGroupPermission, newRelic, pingdom,newRelicthread, pingdomThread
 import threading
 
 #lamdahandler
 def main(event, context):    
     
-    t1 = threadClass.PingdomThread()   
-    t2 = threadClass.NewRelicThread()
+    t1 = newRelicthread.PingdomThread()   
+    t2 = pingdomThread.NewRelicThread()
     t1.start()
     t2.start()
     try:
